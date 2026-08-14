@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Minutas Seguridad (Maven)",
+            "request": "launch",
+            "mainClass": "com.minutas.App",
+            "projectName": "minutas-seguridad",
+            "vmArgs": "--module-path \"${workspaceFolder}/target/classes\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

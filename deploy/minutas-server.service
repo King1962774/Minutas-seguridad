@@ -1,0 +1,14 @@
+[Unit]
+Description=Minutas Seguridad Headless Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/minutas
+ExecStart=/usr/bin/java -jar minutas-seguridad-1.0.0.jar --mode=server --port=8080
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
